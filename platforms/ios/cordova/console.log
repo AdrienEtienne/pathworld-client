@@ -1,0 +1,22 @@
+2014-06-01 12:11:09.767 PathWorld[6675:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-01 12:11:09.971 PathWorld[6675:70b] Unlimited access to network resources
+2014-06-01 12:11:09.974 PathWorld[6675:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-01 12:11:12.153 PathWorld[6675:70b] Resetting plugins due to page load.
+2014-06-01 12:11:13.097 PathWorld[6675:70b] Finished load of: file:///Users/adrien/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1B8BB268-08F5-4111-AC6D-7FCA3FA2C224/PathWorld.app/www/index.html
+2014-06-01 18:10:14.681 PathWorld[1413:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-01 18:10:14.859 PathWorld[1413:70b] Unlimited access to network resources
+2014-06-01 18:10:14.907 PathWorld[1413:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-01 18:10:16.627 PathWorld[1413:70b] Resetting plugins due to page load.
+2014-06-01 18:10:17.441 PathWorld[1413:70b] Finished load of: file:///Users/adrien/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1B8BB268-08F5-4111-AC6D-7FCA3FA2C224/PathWorld.app/www/index.html

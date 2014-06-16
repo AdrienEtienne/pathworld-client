@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+	<link rel="shortcut icon" href="img/LOGOS/faviconPW.ico"/>
+
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<script src="js/vendor/modernizr.js"></script>
+	<title>PathWorld</title>
+</head>
+<body>
+	<div class="app">
+
+		<!-- modified -->
+		<div class="page" id="index">
+			<div class="row">
+				<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-8 small-offset-2 columns">
+					<img id="index-logo" src="img/LOGOS/Logo.png">
+					<form>
+						<a id="index_login" href="#" class="button postfix navigation">Log in</a>
+						<a id="index_register-1" href="#" class="button postfix navigation">Sign up</a>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="page" id="login">
+
+			<div class="topbar">
+				<div>
+					<a class="return topleft" href="#">Back</a>
+				</div>
+				<div>
+					<a href="#" class="next topright">Log in</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<h1 id="login-title">Log in</h1>
+			</div>
+			<div class="row">
+				<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-12 columns">
+					<div class="small-3 large-2 columns">
+						<img class="login-pic" src="img/mail.png">
+					</div>
+					<div class="small-9 large-10 columns">
+						<input id="login-mail" type="email" placeholder="Mail">
+						<small class="error mail error_pattern">Mail pattern fail</small>
+						<small class="error mail error_needed">Mail needed</small>
+						<small class="error mail error_notfind">Mail not find</small>
+					</div>
+
+					<div class="small-3 large-2 columns">
+						<img class="login-pic" src="img/lock.png">
+					</div>
+					<div class="small-9 large-10 columns">
+						<input id="login-pwd" type="password" placeholder="Password">
+						<small class="error password error_needed">Password needed</small>
+						<small class="error password error_length">More than 6 caracters</small>
+						<small class="error password error_notfind">Wrong Password</small>
+					</div>
+					<div class="small-9 large-10 columns">
+						<a id="button_homepage" href="#" class="next button postfix">Log in</a>
+						<small class="error ajax"></small>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page" id="register-1">
+
+			<div class="topbar">
+				<div>
+					<a class="return topleft" href="#">Back</a>
+				</div>
+				<div>
+					<a href="#" class="next topright">Next</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<h1 id="registration-1-title">Registration</h1>
+
+				<div class="large-2 large-offset-5 medium-2 medium-offset-5 small-4 small-offset-4 columns">
+					<img id="register-1-add-user" src="img/add_user.png">
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-12 columns">
+					<div class="small-3 large-2 columns">
+						<img class="register-1-pic" src="img/mail.png">
+					</div>
+					<div class="small-9 large-10 columns">
+						<input type="email" placeholder="Mail">
+						<small class="error mail error_pattern">Mail pattern fail</small>
+						<small class="error mail error_needed">Mail needed</small>
+						<small class="error mail error_notfind">Mail not find</small>
+					</div>
+					<div class="small-3 large-2 columns">
+						<img class="register-1-pic" src="img/lock.png">
+					</div>
+					<div class="small-9 large-10 columns">
+						<input type="password" placeholder="Password">
+						<small class="error password error_needed">Password needed</small>
+						<small class="error password error_length">More than 6 caracters</small>
+						<small class="error password error_notfind">Wrong Password</small>
+					</div>
+					<div class="small-9 large-10 columns">
+						<a id="button_register-2" href="#" class="next button postfix">Next</a>
+						<small class="error ajax"></small>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="page" id="register-2">
+
+			<div class="topbar">
+				<div>
+					<a href="#" class="next topright">Register</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<h1 id="registration-2-title">Add infos</h1>
+				<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-12 columns">
+					<div class="small-3 large-2 columns">
+						<img class="register-2-pic" src="img/lines.png">
+					</div>
+					<div class="small-9 large-10 columns">
+						<input type="text" placeholder="Last name">
+						<small class="error lastname error_needed">Last Name needed</small>
+					</div>
+					<div class="small-3 large-2 columns">
+						<img class="register-2-pic" src="img/lines.png">
+					</div>
+					<div class="small-9 large-10 columns">
+						<input type="text" placeholder="First name">
+						<small class="error firstname error_needed">First Name needed</small>
+					</div>
+					<div class="small-3 large-2 columns">
+						<img class="register-2-pic" src="img/phone.png">
+					</div>
+					<div class="small-9 large-10 columns">
+						<input type="tel" placeholder="Phone">
+						<small class="error phone error_needed">Phone needed</small>
+						<small class="error phone error_pattern">Phone pattern fail</small>
+					</div>
+					
+					<div class="small-3 large-2 columns">
+						<img class="register-2-pic" src="img/address.png">
+					</div>
+					<div class="small-9 large-10 columns">
+						<input type="text" placeholder="Address">
+						<small class="error address error_needed">Address needed</small>
+					</div>
+				<div class="small-9 large-10 columns">
+					<a id="button_register_final" href="#" class="next button postfix">Register</a>
+					<small class="error ajax"></small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page" id="homepage">
+
+		<div class="topbar">
+			<div>
+				<div id="homepage-logout_index" class="hp_index topright" href="#"><img id="settings-icon" src="img/logout.png"></div>
+			</div>
+		</div>
+
+		<h3 id="affiche_login" class="text-center">My Profile</h3>
+
+		<img id="home-profilepic" src="img/icon-profile.png">
+
+		<div class="row">
+			<div class="large-12 columns">
+				<p></p><br>
+			</div>
+		</div>
+
+		<div class="row" id="eventMetrics">
+			<div class="large-12 columns">
+				<div id="homepage-todaysEvent" class="large-4 small-4 columns">
+					<div class="text-center">Today's events</div>
+				</div>
+				<div id="homepage-yourEvents" class="large-4 small-4 columns">
+					<div class="text-center">Your events</div>
+				</div>
+				<div id="homepage-totalEvents" class="large-4 small-4 columns">
+					<div class="text-center">Total events</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="large-4 large-offset-4 small-12 columns"><a href="#" id="hp_modify-profil" class="button expand">Modify profile</a></div>
+		</div>
+	</div>
+
+	<div class="page" id="invite-friend">
+		<div class="topbar">
+			<div>
+				<a class="return topleft" href="#">Back</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="invite-friend-title">Add friends to event</h1>
+			<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-12 columns">
+				<div id="invite-friend-pic" class="small-3 large-2 columns">
+					<img class="invite-friend-pic" src="img/pers.png">
+				</div>
+				<div id="invite-friend-textarea" class="small-9 large-10 columns">
+					<input id="search-friend" type="text" placeholder="Firstname Lastname Mail ...">
+				</div>
+				<div class="small-3 large-2 columns">
+					<label for="invite-role" class="right inline">Role</label>
+				</div>
+				<div class="small-9 large-10 columns">
+					<select id="invite-role">
+						<option value="Guest">Guest</option>
+						<option value="Staff">Staff</option>
+						<option value="Protected guest">Protected guest</option>
+					</select>
+				</div>
+				<a id="button_invite_friend_search" href="#" class="button postfix next">Search</a>
+				<small class="error yellow"></small>
+				<div id="invite-friend-search" class="list-friend">
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="page" id="todayevents">
+		<div class="topbar">
+			<div>
+				<a class="return topleft" href="#">Back</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="todayevents-title">Today's events</h1>
+
+			<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-8 small-offset-2 columns">
+				<small class="error yellow"></small>
+				<ul id="today" class="off-canvas-list">
+					<li><label>Today</label></li>
+				</ul>
+					<!--
+					<ul id="tomorrow" class="off-canvas-list">
+						<li><label>Tomorrow</label></li>
+					</ul>
+					<ul id="later" class="off-canvas-list">
+						<li><label>Later</label></li>
+					</ul>
+				-->
+			</div>
+		</div>
+	</div>
+
+	<div class="page" id="createevent">
+		<div class="topbar">
+			<div>
+				<a class="return topleft" href="#">Back</a>
+			</div>
+			<div>
+				<a href="#" class="next topright">Create</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="createevent-title">Create event</h1>
+			<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-12 columns">
+				<div class="small-3 columns">
+					<label for="entitled" class="right inline">Entitled</label>
+				</div>
+				<div class="small-9 columns">
+					<input id="createevent-entitled" type="text" placeholder="Entitled">
+					<small class="error entitled error_needed">Title needed</small>
+				</div>
+				<div class="small-3 columns">
+					<label for="date" class="right inline">Date</label>
+				</div>
+				<div class="small-9 columns">
+					<input id="createevent-date" type="text" id="date" placeholder="Date yyyy-mm-dd">
+					<small class="error date error_needed">Date needed</small>
+					<small class="error date error_pattern">Pattern expected "YYYY/MM/DD"</small>
+				</div>
+				<div class="small-3 columns">
+					<label for="type" class="right inline">Type</label>
+				</div>
+				<div class="small-9 columns">
+					<select id="createevent-type">
+						<option value="perso">Perso</option>
+						<option value="pro">Pro</option>
+					</select>
+				</div>
+				<div class="small-3 columns">
+					<label for="place" class="right inline">Place</label>
+				</div>
+				<div class="small-9 columns">
+					<input type="text" id="createevent-place" placeholder="Place">
+					<small class="error place error_needed">Place needed</small>
+				</div>
+				<div class="small-3 columns">
+					<label for="address" class="right inline">Address</label>
+				</div>
+				<div class="small-9 columns">
+					<input type="text" id="createevent-address" placeholder="Address">
+					<small class="error address error_needed">Address needed</small>
+				</div>
+				<div class="small-3 columns">
+					<label for="details" class="right inline">Details</label>
+				</div>
+				<div class="small-9 columns">
+					<textarea type="text" id="createevent-details" placeholder="Details"></textarea>
+					<small class="error details error_needed">Details needed</small>
+				</div>
+				<a id="register-1-next" href="#" class="next button postfix">Create</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="page" id="checkevent">
+
+		<div class="topbar">
+			<div>
+				<a class="return topleft" href="#">Back</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="invite-friend-title">List of events</h1>
+			<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-12 columns">
+				<dl class="sub-nav">
+					<dt>Sort:</dt>
+					<dd class="active"><a id="check-event-date" href="#">Date</a></dd>
+					<dd><a id="check-event-status" href="#">Status</a></dd>
+					<dd><a id="check-event-role" href="#">Role</a></dd>
+				</dl>
+				<div id="events">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page" id="showevent">
+
+		<div class="topbar">
+			<div>
+				<a class="return topleft" href="#">Back</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="event-title">Event</h1>
+			<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-8 small-offset-2 columns">
+				<dl class="sub-nav">
+					<dd>Invitation:</dd>
+					<dd id="accept" class="select"><a href="#">Accept</a></dd>
+					<dd id="perhaps" class="select active"><a href="#">Perhaps</a></dd>
+					<dd id="refuse" class="select"im><a href="#">Refuse</a></dd>
+				</dl>
+				<div id="information">
+					<div id = "showevent-date">
+					</div>
+					<div id = "showevent-address">
+					</div>
+					<div id = "showevent-nb-guest">
+					</div>
+					<div id = "showevent-role">
+					</div>
+
+				</div>
+				<div >
+					<a id="showevent-guest-list" href="#" class="button expand"> Guest list </a>
+				</div>
+				<div>
+					<a id="showevent-modify-event" href="#" class="button expand">Modify event </a>
+				</div>
+				<div>
+					<a id="showevent-invite" href="#" class="button expand"> Invite</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page" id="modify-profil">
+
+		<div class="topbar">
+			<div>
+				<a class="return topleft" href="#">Back</a>
+			</div>
+			<div>
+				<a href="#" class="next topright">Done</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="registration-2-title">Modify Profile</h1>
+			<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-12 columns">
+				<div class="small-3 large-2 columns">
+					<img class="register-2-pic" src="img/lines.png">
+				</div>
+				<div class="small-9 large-10 columns">
+					<input id="modify-profil-password" type="password" placeholder="Password" >
+					<small class="error password error_needed">Password needed</small>
+					<small class="error password error_length">More than 6 caracters</small>
+				</div>
+				<div class="small-3 large-2 columns">
+					<img class="register-2-pic" src="img/lines.png">
+				</div>
+				<div class="small-9 large-10 columns">
+					<input id="modify-profil-lastName" type="text"  placeholder="Last name">
+					<small class="error lastname error_needed">Last Name needed</small>
+				</div>
+				<div class="small-3 large-2 columns">
+					<img class="register-2-pic" src="img/lines.png">
+				</div>
+				<div class="small-9 large-10 columns">
+					<input id="modify-profil-firstName" type="text" placeholder="First name">
+					<small class="error firstname error_needed">First Name needed</small>
+				</div>
+				<div class="small-3 large-2 columns">
+					<img class="register-2-pic" src="img/phone.png">
+				</div>
+				<div class="small-9 large-10 columns">
+					<input id="modify-profil-phone" type="tel" placeholder="Phone">
+					<small class="error phone error_needed">Phone needed</small>
+				</div>
+				<div class="small-3 large-2 columns">
+					<img class="register-2-pic" src="img/address.png">
+				</div>
+				<div class="small-9 large-10 columns">
+					<input id="modify-profil-address" type="text" placeholder="Address">
+					<small class="error address error_needed">Address needed</small>
+				</div>
+				<div class="small-12 large-10 columns">
+					<a id="button_register_final" href="#" class="next button postfix">Done</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page" id="contacts">
+
+		<div class="topbar">
+			<div>
+				<a class="return topleft" href="#">Back</a>
+			</div>
+			<div>
+				<a href="#" class="next topright">Done</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="invite-friend-title">Contacts</h1>
+			<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-12 columns">
+				<div id="invite-friend-pic" class="small-3 large-2 columns">
+					<img class="invite-friend-pic" src="img/pers.png">
+				</div>
+				<div id="invite-friend-textarea" class="small-9 large-10 columns">
+					<input id="search-friend" type="text" placeholder="Firstname, Lastname, Mail ...">
+				</div>
+				<div id="invite-friend-search" class="list-friend">
+				</div>
+				<a id="invite-friend-add" href="#" class="button postfix next">Synchronize</a>
+			</div>
+		</div>
+	</div>
+	<div class="page" id="createtips">
+		<div class="topbar">
+			<div>
+				<a class="return topleft" href="#">Back</a>
+			</div>
+			<div>
+				<a href="#" class="next topright">Create</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="createtips-title">Create tips</h1>
+			<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-12 columns">
+				<div class="small-3 columns">
+					<label for="name" class="right inline">Name</label>
+				</div>
+				<div class="small-9 columns">
+					<input id="createtips-name" type="text" placeholder="name">
+					<small class="error entitled error_needed">Name needed</small>
+				</div>
+				<div class="small-3 columns">
+					<label for="content" class="right inline">Content</label>
+				</div>
+				<div class="small-9 columns">
+					<textarea type="text" id="createtips-content" placeholder="content"></textarea>
+					<small class="error details error_needed">Content needed</small>
+				</div>
+				<a id="createtips-1-next" href="#" class="next button postfix">Create</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="page" id="event-map">
+		<div id="map-canvas"/></div>
+	</div>
+
+	<div class="page" id="guests-list">
+
+		<div class="topbar">
+			<div>
+				<a class="return topleft" href="#">Back</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="guests-list-title">List of events</h1>
+			<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-12 columns">
+				<div id="guests-list-list">
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="page" id="modify-event">
+		<div class="topbar">
+			<div>
+				<a class="return topleft" href="#">Back</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="modify-event-title">Modify event</h1>
+			<div class="large-4 large-offset-4 medium-6 medium-offset-3 small-12 columns">
+				<div class="small-3 columns">
+					<label for="modify-event-entitled" class="right inline">Entitled</label>
+				</div>
+				<div class="small-9 columns">
+					<input id="modify-event-entitled" type="text" placeholder="Entitled">
+					<small class="error entitled error_needed">Title needed</small>
+				</div>
+				<div class="small-3 columns">
+					<label for="modify-event-date" class="right inline">Date</label>
+				</div>
+				<div class="small-9 columns">
+					<input id="modify-event-date" type="text" id="date" placeholder="Date">
+					<small class="error date error_needed">Date needed</small>
+					<small class="error date error_pattern">Pattern expected "YYYY/MM/DD"</small>
+				</div>
+				<div class="small-3 columns">
+					<label for="modify-event-type" class="right inline">Type</label>
+				</div>
+				<div class="small-9 columns">
+					<select id="modify-event-type">
+						<option value="perso">Perso</option>
+						<option value="pro">Pro</option>
+					</select>
+				</div>
+				<div class="small-3 columns">
+					<label for="modify-event-address" class="right inline">Address</label>
+				</div>
+				<div class="small-9 columns">
+					<input type="text" id="modify-event-address" placeholder="Address">
+					<small class="error address error_needed">Address needed</small>
+				</div>
+				<div class="small-3 columns">
+					<label for="modify-event-place" class="right inline">Place</label>
+				</div>
+				<div class="small-9 columns">
+					<input type="text" id="modify-event-place" placeholder="Place">
+					<small class="error place error_needed">Place needed</small>
+				</div>
+				<div class="small-3 columns">
+					<label for="modify-event-details" class="right inline">Details</label>
+				</div>
+				<div class="large-9 columns">
+					<textarea id="modify-event-details" placeholder="Details"></textarea>
+					<small class="error details error_needed">Details needed</small>
+				</div>
+				<a id="modify-event-next" href="#" class="next button postfix">Modify</a>
+				<a id="modify-event-delete" href="#" class="delete btn-danger postfix">Delete</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottom-bar">
+		<div id="bb_checkevent" class="small-2 large-2 columns bottom-bar-button navigation"><img  src="img/LOGOS/events.png"><div>Events</div></div>
+		<div id="bb_createevent" class="small-3 large-3 columns bottom-bar-button navigation"><img src="img/LOGOS/add.png"><div>Create</div></div>
+		<div id="bb_todayevents" class="small-2 large-2 columns bottom-bar-button navigation"><img src="img/LOGOS/todays.png"><div>Today's</div></div>
+		<div id="bb_homepage" class="small-3 large-3 columns bottom-bar-button navigation"><img  src="img/LOGOS/profil.png"><div>Homepage</div></div>
+		<div id="bb_contacts" class="small-2 large-2 columns bottom-bar-button navigation"><img src="img/LOGOS/contacts.png"><div>Contacts</div></div>
+	</div>
+</div>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.abide.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfWDZUG94WtUrlGzz4KBfQbY_2f3Wa6aM&sensor=false"></script>
+<script type="text/javascript" src="js/maps-overlay.js"></script>
+<script type="text/javascript" src="js/navigation.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/pages/createevent.js"></script>
+<script type="text/javascript" src="js/pages/event-maps.js"></script>
+<script type="text/javascript" src="js/pages/eventlist.js"></script>
+<script type="text/javascript" src="js/pages/homepage.js"></script>
+<script type="text/javascript" src="js/pages/index.js"></script>
+<script type="text/javascript" src="js/pages/invite-friend.js"></script>
+<script type="text/javascript" src="js/pages/login.js"></script>
+<script type="text/javascript" src="js/pages/registration-1.js"></script>
+<script type="text/javascript" src="js/pages/registration-2.js"></script>
+<script type="text/javascript" src="js/pages/check-event.js"></script>
+<script type="text/javascript" src="js/pages/show-event.js"></script>
+<script type="text/javascript" src="js/pages/today-events.js"></script>
+<script type="text/javascript" src="js/pages/modifyprofil.js"></script>
+<script type="text/javascript" src="js/pages/guests-list.js"></script>
+<script type="text/javascript" src="js/pages/modify-event.js"></script>
+<script type="text/javascript" src="js/pages/caillou.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<script type="text/javascript" src="tests/test.js"></script>
+
+<script type="text/javascript">
+	app.initialize();
+	$(document).foundation();
+</script>
+</body>
+</html>

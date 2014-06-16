@@ -1,0 +1,329 @@
+/* Common css */
+
+@font-face{
+	font-family: testFont;
+	src: url(../fonts/Amaranth/Amaranth-Regular.ttf);
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	margin: 0;
+	margin-bottom : 120px;
+	padding: 0;
+	font-family: "testFont" !important;
+}
+
+h1, h2, h3, button, a{
+	font-family: "testFont" !important;
+}
+
+.small-12{
+	margin: 0px;
+}
+
+.button{
+	position: initial;
+}
+
+.app{
+	height: 100%;
+	width: 100%;
+}
+
+.delete{
+	background-color: #F01236;
+	color: #FFFFFF;
+}
+
+/* NavBar css */
+
+.bottom-bar-button{
+	overflow: hidden;
+	position: relative;
+	color:black;
+	text-align: center;
+}
+
+.bottom-bar{
+	background: #D7DEE4;
+	position: fixed;
+	text-align:center;
+	bottom: 0px;
+	width: 100%;
+	height: 60px;
+	margin-bottom: 0px;
+}
+.bottom-bar > div
+{
+	margin: 0px;
+	padding: 0px;
+	font-size : 12px;
+}
+
+.bottom-bar div:hover{
+	cursor : pointer;
+}
+
+.bottom-bar div img{
+	margin-top : 5px;
+	margin-bottom : 2px;
+	height : 30px;
+	width : 30px;
+}
+
+#homepage-logout_index:hover{
+	cursor: pointer;
+}
+
+.topbar{
+	padding-top : 2px;
+	padding-bottom : 2px;
+	padding-left : 10px;
+	padding-right : 10px;
+	background: #008cba;
+	color: white;
+	height : 40px;
+}
+
+.topbar a{
+	margin-top : 10px;
+}
+
+.topbar a{
+	color : white;
+}
+
+.topright{
+	position : relative;
+	float : right;
+}
+
+.topleft{
+	position : relative;
+	float : left;
+}
+
+/* Specific css */
+
+#index-logo{
+	margin-top: 40%;
+	margin-bottom: 40%;
+	width: 100%;
+	height: auto;
+}
+
+#index{
+	display: none;
+	color:black;
+	background-color:white;
+}
+
+#map{
+	height: 500px;
+	width: 1000px;
+}
+
+#login-title, #registration-1-title, #registration-2-title, #createevent-title, #invite-friend-title{
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+#register-1-add-user{
+	margin-bottom: 40%;
+}
+
+.login-pic, .register-1-pic, .register-2-pic, .invite-friend-pic{
+	min-height: 35px;
+	min-width: 35px;
+}
+
+#register-1-next{
+	margin-top: 20%;
+}
+
+#register-2{
+}
+
+/* login */
+
+/* end login */
+
+/* Invite friend */
+
+.invite-f-shadowed{
+	color : grey;
+	font-style: italic;
+}
+
+#invite-friend-add{
+	margin-top: 10px;
+}
+
+#invite-friend .list-friend div{
+	width: 100%;
+	padding : 8px;
+	border-width: 0px 0px 1px 0px;;
+	border-style:solid;
+	border-color:grey;
+}
+
+#todayevents li>div{
+	width: 100%;
+	padding : 8px;
+	border-width: 0px 0px 1px 0px;;
+	border-style:solid;
+	border-color:grey;
+}
+
+.user-invited{
+	color : #72B577;
+}
+
+.user-invited:hover, .user-not-invited:hover{
+	cursor : pointer;
+}
+
+
+/* End Invite friend*/
+
+/* List of event */
+#checkevent .sub-nav{
+	margin: 0px;
+	padding: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: grey;
+}
+
+.check-event-events:hover{
+	cursor:pointer;
+}
+
+#checkevent .columns{
+	padding: 0px;
+}
+
+#checkevent #events{
+	width: 100%;
+}
+
+#checkevent #events div{
+	width: 100%;
+	padding : 8px;
+	border-width: 0px 0px 1px 0px;;
+	border-style:solid;
+	border-color:grey;
+}
+
+#checkevent #events img{
+	float:right;
+	padding-bottom : 2px;
+}
+/* End list of event */
+
+/* showevent */
+#showevent .sub-nav{
+	margin: 0px;
+	padding: 15px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: grey;
+}
+
+#showevent .sub-nav dd{
+	margin: 0px;
+	width: 25%;
+	text-align: center;
+}
+
+#showevent .sub-nav dd a{
+	padding: 7px;
+	width: 100%;
+}
+
+
+#showevent .columns{
+	padding: 0px;
+}
+
+#showevent #information{
+	text-align: center;
+}
+
+#showevent img{
+	margin: 10px;
+	padding: 0px;
+}
+/* fin showevent */
+
+.page {
+	display : none;
+}
+
+#profile legend img{
+	max-width:50px;
+}
+
+.main-section{
+	padding: 10px 10px 10px 10px;
+	background-color: rgb(208,208,208) ;
+}
+
+h1{
+	text-align: center
+}
+
+small{
+	display: block;
+	width: 100%;
+}
+
+small.error{
+	display: none;
+	width: 100%;
+}
+small.yellow{
+	background: #F0AF24;
+}
+
+
+/* homepage*/
+
+#home-profilepic{
+	height : 100px;
+	width : 100px;
+	display: block;
+	margin-left : auto;
+	margin-right : auto;
+}
+
+#settings-icon{
+	height : 20px;
+	width : 20px;
+	margin-top : 7px;
+}
+
+#hp_modify-profil{
+	margin-top: 40px;
+}
+
+.homepage-values{
+	color: red;
+	margin-top: 5px;
+}
+
+/* guests-list */
+
+#guests-list-title{
+	margin-bottom: 5%;
+}
+
+.guest-list-user{
+	border-bottom : solid 2px grey;
+	padding-top : 10px;
+	padding-bottom : 10px;
+}
